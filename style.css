@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #74C69D;
+}
+
+.container {
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo img {
+    height: 35px;
+}
+
+.about ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+    color: white;
+}
+
+.about ul li {
+    transition: transform 0.5s ease;
+}
+
+.about ul li:hover {
+    color: brown;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.center {
+    margin: 58px  0 135px;
+}
+
+.service {
+    text-align: center;
+}
+
+.service .plan {
+    color: #74C69D;
+}
+
+.service h1 {
+    padding: 16px 0;
+}
+
+.quti {
+    display: flex;
+    justify-content: space-between;
+    padding: 78px 0 0;
+    flex-wrap: wrap;
+}
+
+.quti .box  {
+    width: 31%;
+    box-shadow: rgba(56, 56, 63, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    padding: 46px 30px;
+    border-radius: 8px;
+}
+
+.box span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.span {
+    color: #74C69D;
+}
+
+.lorem {
+    margin: 10px 0 52px;
+}
+
+button {
+    margin: 45px 0;
+    padding: 15px 30px;
+    background-color: black;
+    color: azure;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #74C69D;
+}
+
+.footer {
+    padding: 50px 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social img {
+    transition: transform 0.2s ease;
+}
+
+.social img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.right-side {
+    color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        display: none; 
+    }
+    
+    .navbar {
+        justify-content: center; 
+    }
+    
+    .quti .box {
+        width: 48%;
+    }
+    
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .quti {
+        justify-content: center; 
+        gap: 15px;
+    }
+    
+    .quti .box {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .quti .box {
+        width: 100%;
+    }
+    
+    .center {
+        margin: 30px 0 60px;
+    }
+}
